@@ -7,8 +7,8 @@ import authentication.guest.User;
 import business.menu.AdminUIMenu;
 import business.menu.UIMenuEntity;
 import business.menu.VisitorUIMenu;
-import business.modes.InfoMode;
-import business.modes.UserMode;
+import business.mode.InfoMode;
+import business.mode.UserMode;
 import business.util.UserUtil;
 
 import java.util.Objects;

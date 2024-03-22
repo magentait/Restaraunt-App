@@ -1,4 +1,4 @@
-package business.modes;
+package business.mode;
 
 public enum UpdateMode {
     COUNT,

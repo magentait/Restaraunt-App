@@ -5,7 +5,6 @@ public interface User {
     String getPassword();
     String getUserType();
     void setUserType(String userType);
-
     void displayInfo();
 }
 

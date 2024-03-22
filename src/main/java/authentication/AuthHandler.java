@@ -1,7 +1,7 @@
 package authentication;
 
 import business.menu.UIMenuEntity;
-import business.modes.UserMode;
+import business.mode.UserMode;
 
 import java.util.Scanner;
 

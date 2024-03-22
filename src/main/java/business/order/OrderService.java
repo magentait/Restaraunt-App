@@ -1,7 +1,7 @@
 package business.order;
 
 import business.product.FoodMenu;
-import business.modes.PaymentStatusMode;
+import business.mode.PaymentStatusMode;
 import business.order.status.ReadyState;
 import business.util.DishUtil;
 import business.util.OrderUtil;

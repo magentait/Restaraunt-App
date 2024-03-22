@@ -1,6 +1,6 @@
 package business.util;
 
-import business.modes.InfoMode;
+import business.mode.InfoMode;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

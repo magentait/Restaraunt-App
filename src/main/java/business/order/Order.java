@@ -3,15 +3,15 @@ package business.order;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import business.RestaurantStats;
 import business.product.Dish;
-import business.modes.PaymentStatusMode;
+import business.mode.PaymentStatusMode;
 import business.order.status.AcceptedState;
 import business.order.status.OrderState;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static business.modes.PaymentStatusMode.NOTPAID;
-import static business.modes.PaymentStatusMode.PAID;
+import static business.mode.PaymentStatusMode.NOTPAID;
+import static business.mode.PaymentStatusMode.PAID;
 
 
 public class Order implements Runnable {

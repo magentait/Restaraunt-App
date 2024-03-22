@@ -3,7 +3,7 @@ package business.order.status;
 import business.product.Dish;
 import business.order.Order;
 
-import static business.modes.PaymentStatusMode.NOTPAID;
+import static business.mode.PaymentStatusMode.NOTPAID;
 
 abstract public class OrderState {
     protected Order order;

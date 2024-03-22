@@ -4,7 +4,7 @@ import authentication.UserDatabase;
 import business.RestaurantStats;
 import business.product.DishService;
 import business.product.FoodMenu;
-import business.modes.UpdateMode;
+import business.mode.UpdateMode;
 
 import java.util.Scanner;
 

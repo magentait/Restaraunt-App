@@ -1,7 +1,7 @@
 package business.product;
 
 import business.FileHandler;
-import business.modes.UpdateMode;
+import business.mode.UpdateMode;
 
 import java.util.ArrayList;
 import java.util.List;

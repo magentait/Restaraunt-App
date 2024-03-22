@@ -1,6 +1,6 @@
 package business.product;
 
-import business.modes.UpdateMode;
+import business.mode.UpdateMode;
 import business.util.DishUtil;
 
 import java.util.Objects;
