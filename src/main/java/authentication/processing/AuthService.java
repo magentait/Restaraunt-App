@@ -1,5 +1,6 @@
-package authentication;
+package authentication.processing;
 
+import authentication.UserDatabase;
 import authentication.factory.AdminFactory;
 import authentication.factory.UserFactory;
 import authentication.factory.VisitorFactory;

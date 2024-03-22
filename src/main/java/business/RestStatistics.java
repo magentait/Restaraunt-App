@@ -1,19 +1,16 @@
 package business;
 
-public class RestaurantStats {
+public class RestStatistics {
     private static double totalRevenue;
-    public static double updateTotalRevenue(double value) {
+    public static void updateTotalRevenue(double value) {
         totalRevenue += value;
 
         FileHandler.saveStats("stats.json");
-        return totalRevenue;
     }
 
     public static double getTotalRevenue() { return totalRevenue; }
 
-    public static void setTotalRevenue(double totalRevenue) { RestaurantStats.totalRevenue = totalRevenue; }
-
-
+    public static void setTotalRevenue(double totalRevenue) { RestStatistics.totalRevenue = totalRevenue; }
 
     public static void display() {
         System.out.println();

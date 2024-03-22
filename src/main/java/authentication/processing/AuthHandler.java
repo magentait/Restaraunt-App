@@ -1,4 +1,4 @@
-package authentication;
+package authentication.processing;
 
 import business.menu.UIMenuEntity;
 import business.mode.UserMode;
@@ -20,7 +20,7 @@ public class AuthHandler implements UIMenuEntity {
     }
 
     public void displayMenu() {
-        System.out.println("_____АВТОРИЗАЦИЯ_____");
+        System.out.println("_____ АВТОРИЗАЦИЯ _____");
         System.out.println("(1)  Войти \n(2)  Регистрация Посетителя" +
                 "\n(3)  Регистрация Администратора\n(0)  Выход ");
     }

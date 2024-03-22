@@ -1,5 +1,5 @@
-import authentication.AuthHandler;
-import authentication.AuthService;
+import authentication.processing.AuthHandler;
+import authentication.processing.AuthService;
 import business.FileHandler;
 
 public class Main {

@@ -26,7 +26,7 @@ public class VisitorUIMenu implements UIMenuEntity {
 
     @Override
     public void displayMenu() {
-        System.out.println("________________ Главное меню ____________________");
+        System.out.println("________________ ГЛАВНОЕ МЕНЮ ____________________");
         System.out.println("                 [Посетитель]");
         System.out.println("(1)  Открыть меню");
         System.out.println("(2)  Оформить заказ");

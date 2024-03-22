@@ -31,7 +31,7 @@ public class FileHandler {
     public static void saveStats(String path) {
         String filePath = MessageFormat.format("{0}/{1}", dataFolderPath, path);
         ObjectMapper objectMapper = new ObjectMapper();
-        RestaurantStateTemplate restaurantStats = new RestaurantStateTemplate();
+        RestStateTemplate restaurantStats = new RestStateTemplate();
 
         try {
             objectMapper.writeValue(new File(filePath), restaurantStats);
@@ -45,9 +45,9 @@ public class FileHandler {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            RestaurantStateTemplate stats = objectMapper.readValue(new File(filePath), RestaurantStateTemplate.class);
+            RestStateTemplate stats = objectMapper.readValue(new File(filePath), RestStateTemplate.class);
 
-            RestaurantStats.setTotalRevenue(stats.getTotalRevenue());
+            RestStatistics.setTotalRevenue(stats.getTotalRevenue());
         } catch (Exception e) {
             System.out.println("Ошибка: " + e.getMessage());
         }

@@ -1,7 +1,7 @@
 package business.order;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import business.RestaurantStats;
+import business.RestStatistics;
 import business.product.Dish;
 import business.mode.PaymentStatusMode;
 import business.order.status.AcceptedState;
@@ -28,7 +28,7 @@ public class Order implements Runnable {
 
     public Order() {
         id = OrderDatabase.getAll().size() + 1;
-        dishes = new ArrayList<Dish>();
+        dishes = new ArrayList<>();
         totalPrice = 0;
         totalPrepareTime = 0;
         paymentStatus = NOTPAID;
@@ -92,7 +92,7 @@ public class Order implements Runnable {
 
     public void pay() {
         paymentStatus = PAID;
-        RestaurantStats.updateTotalRevenue(totalPrice);
+        RestStatistics.updateTotalRevenue(totalPrice);
     }
 
     public void add(Dish dish) {

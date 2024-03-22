@@ -2,13 +2,13 @@ package business;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class RestaurantStateTemplate {
+public class RestStateTemplate {
     private double totalRevenue;
-    public RestaurantStateTemplate() {
-        totalRevenue = RestaurantStats.getTotalRevenue();
+    public RestStateTemplate() {
+        totalRevenue = RestStatistics.getTotalRevenue();
     }
 
-    public RestaurantStateTemplate(@JsonProperty("totalRevenue") double totalRevenue) {
+    public RestStateTemplate(@JsonProperty("totalRevenue") double totalRevenue) {
         this.totalRevenue = totalRevenue;
     }
 

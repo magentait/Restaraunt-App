@@ -1,7 +1,7 @@
 package business.menu;
 
 import authentication.UserDatabase;
-import business.RestaurantStats;
+import business.RestStatistics;
 import business.product.DishService;
 import business.product.FoodMenu;
 import business.mode.UpdateMode;
@@ -20,7 +20,7 @@ public class AdminUIMenu implements UIMenuEntity {
 
     @Override
     public void displayMenu() {
-        System.out.println("________________ Главное меню ____________________");
+        System.out.println("________________ ГЛАВНОЕ МЕНЮ ____________________");
         System.out.println("                [Администратор]");
         System.out.println("(1) Открыть меню");
         System.out.println("(2) Добавить позицию");
@@ -71,7 +71,7 @@ public class AdminUIMenu implements UIMenuEntity {
 
                     break;
                 case "7":
-                    RestaurantStats.display();
+                    RestStatistics.display();
 
                     FoodMenu.displayPopular();
 
